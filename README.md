@@ -1,9 +1,18 @@
 # Simple project to call native cpp from java
 
+
 1.Create java class you wish to extend with native methods and declare native methods
+
+
 2.Compile to header with javac -h target src/JNative.java -classpath classes
+
+
 3.Open your cpp soultion
+
+
 4.include generated header into cpp project, also don't forget to include <jni.h>
+
+
 5.compile cpp project with
 
 g++ -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" 
